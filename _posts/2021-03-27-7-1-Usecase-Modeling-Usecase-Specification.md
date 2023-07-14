@@ -1,3 +1,9 @@
+---
+layout: post
+title:  7-1. Usecase Modeling Usecase Specification
+date: 2021-03-27 19:20:23 +0900
+category: SoftwareEngineering
+---
 # 7-1. Usecase Modeling Usecase Specification
 
 # 개요

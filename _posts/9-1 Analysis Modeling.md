@@ -1,3 +1,9 @@
+---
+layout: post
+title:  9-1. Analysis Modeling
+date: 2021-04-02 19:20:23 +0900
+category: SoftwareEngineering
+---
 # 9-1. Analysis Modeling
 
 이떄까지 배운건 소프트웨어가 머고 소공이 머고 프로세스, 프로젝트 관리, 품질보증을 관리해줘야 한다
