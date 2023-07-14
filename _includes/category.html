@@ -1,10 +1,10 @@
-<article class="post">
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
+	<article class="post">
+	
 	<header class="post-header home">
 		<div class="post-title">Category - <span id='category-name'></span></div>
 	</header>
-	</head>
 	<div class="post-content">
 		{%- if site.posts.size > 0 -%}
 		<ul class="post-list">
@@ -22,8 +22,8 @@
 		</ul>
 	  	{%- endif -%}
 	</div>
-</article>
-
+	</article>
+</head>
 <script src="/public/js/jquery-3.4.1.slim.min.js"></script>
 <script>
 	function removeCategory() {
