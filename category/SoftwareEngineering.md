@@ -1,5 +1,5 @@
 ---
 layout: category
-title: softwareEngineering
+title: SoftwareEngineering
 permalink: /category/
 ---
