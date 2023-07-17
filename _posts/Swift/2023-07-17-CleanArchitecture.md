@@ -1,13 +1,9 @@
 ---
-title: CleanArchitecture
-subtitle: 
-categories: Swift
-tags: 
-date: 2023-07-17 17:29:33 +0000
-last_modified_at: 2023-07-17 17:29:33 +0000
+layout: post
+title: Clean Architecture 정리
+date: 2022-07-15 19:20:23 +0900
+category: Swift
 ---
-
-종류: Architecture
 
 개요
 
