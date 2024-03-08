@@ -1,3 +1,9 @@
+---
+layout: post
+title: 0. 디자인 패턴이란?
+date: 2021-03-17 19:20:23 +0900
+category: SoftwareEngineering
+---
 # DesignPattern
 
 종류: Pattern
