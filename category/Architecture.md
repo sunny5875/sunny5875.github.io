@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Engineer Information Processing
+title: Architecture
 permalink: /category/
 ---
