@@ -1,5 +1,5 @@
 ---
 layout: category
-title: EngineerInformationProcessing
+title: ComputerScience
 permalink: /category/
 ---
