@@ -10,8 +10,7 @@ category: Swift
 - 기존 앱 0.3.0 기준 0.1.0에서는 MVC였는데 0.2.0에서 MVVM으로 변경했었음.
 - 근데 viewModel이 너무 비대해지기 때문에 새로운 아키텍처 도입이 필요하다고 여겨서 작성하게 됨!!
 
-### MVVM Pattern ( UniWaffle v0.3.0 Architecture )
-
+### MVVM Pattern
 ![Untitled](/assets/images/2023-07-17-CleanArchitecture/Untitled%200.png)
 
 **View**
