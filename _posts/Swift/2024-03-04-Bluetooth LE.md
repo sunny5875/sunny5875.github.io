@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bluetooth LE
-date: 2024-03-04 23:25:33 +0000
+date: '2024-03-04 23:25:33 +0000'
 category: Swift
 ---
 # Bluetooth LE
@@ -26,7 +26,7 @@ category: Swift
 
 ### 리서치 세부사항
 
-- [https://bitbucket.org/waffle-hanyang/bluetoothtest_ios/src/master/](https://bitbucket.org/waffle-hanyang/bluetoothtest_ios/src/master/) 해당 레포에서 진행
+- [https://github.com/sunny5875/BLE_Practice](https://github.com/sunny5875/BLE_Practice) 해당 레포에서 진행
 - apple 공식 레퍼런스에 있는 예시에서 원하는 부분을 수정하면서 진행
 - 진행한 예시는 Bluetooth low energy를 이용해서 진행
     - 기존 블루투스보다 저전력으로 연결이 가능한 기술
@@ -73,7 +73,7 @@ category: Swift
     2. service: peripheral이 가지고 있는 하나의 기능
     3. characteristic: peripheral이 실질적으로 가지고 있는 데이터
     
-    ![Untitled](Bluetooth%20LE%20e19395ce76064c9bb0c5909430dbc27b/Untitled.png)
+    ![Untitled](/assets/2024-03-04-Bluetooth LE/Untitled.png)
     
 - **주고 받는 방식**
     - peripheral은 특정 characteristic를 세팅하고 해당 characteristic을 service를 만든 후 advertise 해서 central이 찾을 수 있도록 한다.
