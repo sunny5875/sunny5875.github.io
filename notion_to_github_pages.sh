@@ -80,10 +80,10 @@ for exported_foldername in ${exported_foldername_array[*]}; do
     # OS X ships with BSD sed, where the suffix for the -i option(changes made to the file) is mandatory. Try sed -i ''
     # https://stackoverflow.com/questions/16745988/sed-command-with-i-option-in-place-editing-works-fine-on-ubuntu-but-not-mac
     sed -i '' "1s|.*|---|" "$exported_file_path"
-    sed -i "" -e $'1 a\\\n'"title: $meta_title" "$exported_file_path" #title은 Notion 제목값으로 자동 입력
-    sed -i "" -e $'2 a\\\n'"categories: $meta_categories" "$exported_file_path"
+    sed -i "" -e $'1 a\\\n'"layout: post" "$exported_file_path"
+    sed -i "" -e $'2 a\\\n'"title: $meta_title" "$exported_file_path" #title은 Notion 제목값으로 자동 입력
     sed -i "" -e $'3 a\\\n'"date: $meta_date" "$exported_file_path"
-    sed -i "" -e $'4 a\\\n'"last_modified_at: $meta_last_modified_at" "$exported_file_path"
+    sed -i "" -e $'4 a\\\n'"category: $meta_categories" "$exported_file_path"
     sed -i "" -e $'5 a\\\n'"---" "$exported_file_path"
 
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 3-1. Semantic Analysis
+date: '2024-03-12 22:21:28 +0000'
 category: Compiler
-date: 2024-03-12 22:21:28 +0000
 ---
 
 지금까지 Lexical analysis로 character stream-> token stream이 나오게 되고 syntax analysis으로 문법이 틀리지 않았는지 확인

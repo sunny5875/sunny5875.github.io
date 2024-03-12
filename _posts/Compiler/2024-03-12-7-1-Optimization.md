@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 7-1.Optimization
+date: '2024-03-12 22:21:28 +0000'
 category: Compiler
-date: 2024-03-12 22:21:28 +0000
 ---
 
 - 이제는 data flow analysis를 끝냈기 때문에 실제로 코드를 최적화하는 기법들에 대해서 알아보자

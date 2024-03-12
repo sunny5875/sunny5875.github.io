@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 4-1. Intermediate Representation
+date: '2024-03-12 22:21:28 +0000'
 category: Compiler
-date: 2024-03-12 22:21:28 +0000
 ---
 
 ![Untitled](/assets/2024-03-12-4-1-Intermediate-Representation/Untitled.png)
