@@ -1,10 +1,8 @@
 ---
+layout: post
 title: 7-2.Optimization 2
-subtitle: 
-categories: Compiler
-tags: 
-date: 2024-03-12 22:21:25 +0000
-last_modified_at: 2024-03-12 22:21:25 +0000
+category: Compiler
+date: 2024-03-12 22:21:28 +0000
 ---
 
 # forward copy propagation

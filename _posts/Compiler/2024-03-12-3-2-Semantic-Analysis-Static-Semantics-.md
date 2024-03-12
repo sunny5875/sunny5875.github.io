@@ -1,10 +1,8 @@
 ---
+layout: post
 title: 3-2. Semantic Analysis(Static Semantics)
-subtitle: 
-categories: Compiler
-tags: 
-date: 2024-03-12 22:21:30 +0000
-last_modified_at: 2024-03-12 22:21:30 +0000
+category: Compiler
+date: 2024-03-12 22:21:28 +0000
 ---
 
 Type checking과 scope에 대해서 배웠는데 static semantic에서 알아보자!

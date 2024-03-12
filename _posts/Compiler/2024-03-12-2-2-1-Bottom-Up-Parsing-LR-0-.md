@@ -1,10 +1,8 @@
 ---
+layout: post
 title: 2-2-1. Bottom Up Parsing(LR(0))
-subtitle: 
-categories: Compiler
-tags: 
-date: 2024-03-12 22:21:17 +0000
-last_modified_at: 2024-03-12 22:21:17 +0000
+category: Compiler
+date: 2024-03-12 22:21:28 +0000
 ---
 
 CFG를 이용해서 syntax 룰을 지정하고 이걸로 Parsing을 수행하며 간단한 Predictive parser에 대해서 알아보았다(top down parsing)
