@@ -19,10 +19,8 @@ class ClassProtocolTest: MyDelegate {
 
 하지만, 에러가 발생함!!
 
-<aside>
-💡 `'weak' must not be applied to non-class-bound 'MyDelegate'; consider adding a protocol conformance that has a class bound`
+**Note** 💡 `'weak' must not be applied to non-class-bound 'MyDelegate'; consider adding a protocol conformance that has a class bound`
 
-</aside>
 
 ### 원인
 
