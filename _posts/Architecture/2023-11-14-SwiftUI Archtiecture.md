@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SwiftUI Archtiecture
-date: 2023-11-14 19:20:23 +0900
+date: '2023-11-14 19:20:23 +0900'
 category: Architecture
 ---
 # swiftUI Architecture
@@ -12,7 +12,7 @@ category: Architecture
 
 model - view
 
-![스크린샷 2022-10-13 오후 1.36.11.png](swiftUI%20Architecture%201ba31fa24e1b4904bdf49074870e0d47/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-10-13_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_1.36.11.png)
+![스크린샷 2022-10-13 오후 1.36.11.png](/assets/2023-11-14-SwiftUI Archtiecture/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_1.36.11.png)
 
 ```swift
 struct ChatListView: View {
@@ -148,19 +148,19 @@ class CounterViewModel: ObservableObject {
 
 # Redux
 
-![스크린샷 2022-10-13 오후 1.38.17.png](swiftUI%20Architecture%201ba31fa24e1b4904bdf49074870e0d47/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-10-13_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_1.38.17.png)
+![스크린샷 2022-10-13 오후 1.38.17.png](/assets/2023-11-14-SwiftUI Archtiecture/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_1.38.17.png)
 
 # Flux
 
 리엑트에서 주로 사용하는 아키텍처
 
-![스크린샷 2022-10-13 오후 1.46.23.png](swiftUI%20Architecture%201ba31fa24e1b4904bdf49074870e0d47/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-10-13_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_1.46.23.png)
+![스크린샷 2022-10-13 오후 1.46.23.png](/assets/2023-11-14-SwiftUI Archtiecture/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_1.46.23.png)
 
 - action이 발생하면 dispatcher에 의해 store에 변경된 사항이 저장되고 저장된 사항에 따라서 view가 변경되는 단방향패턴
 - dispatcher는 action을 정리해주고 store은 어플리케이션의 데이터들이 저장되는 장소
 - mvc의 구조의 단점을 보완하는 단방향 데이터 흐름 구조
     
-    ![Untitled](swiftUI%20Architecture%201ba31fa24e1b4904bdf49074870e0d47/Untitled.png)
+    ![Untitled](/assets/2023-11-14-SwiftUI Archtiecture/Untitled.png)
     
 - 장점 : 단방향으로 흐르기 때문에 훨씬 파악하기가 쉽고 코드의 흐름이 예측가능
 
@@ -173,9 +173,9 @@ class CounterViewModel: ObservableObject {
 - 리덕스는 다수의 store도 존재하지 않는다. 대신 리덕스는 하나의 root에 하나의 store만이 존재한다.
 - 순수함수(pure functions)에 의존한다. (state의 불변성)
 
-![스크린샷 2022-10-13 오후 3.06.38.png](swiftUI%20Architecture%201ba31fa24e1b4904bdf49074870e0d47/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2022-10-13_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_3.06.38.png)
+![스크린샷 2022-10-13 오후 3.06.38.png](/assets/2023-11-14-SwiftUI Archtiecture/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-10-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.06.38.png)
 
-![Untitled](swiftUI%20Architecture%201ba31fa24e1b4904bdf49074870e0d47/Untitled%201.png)
+![Untitled](/assets/2023-11-14-SwiftUI Archtiecture/Untitled 1.png)
 
 ---
 
@@ -183,7 +183,7 @@ class CounterViewModel: ObservableObject {
 
 - Combine은 시간의 흐름에 따라 값을 처리하기 위한 Declarative Swift API를 제공하는 프레임워크인 것이다.
 
-![Untitled](swiftUI%20Architecture%201ba31fa24e1b4904bdf49074870e0d47/Untitled%202.png)
+![Untitled](/assets/2023-11-14-SwiftUI Archtiecture/Untitled 2.png)
 
 ## Publisher
 
@@ -257,7 +257,7 @@ class TestSubscription: Subscription {
 
 ### combine 객체들의 상호작용
 
-![Untitled](swiftUI%20Architecture%201ba31fa24e1b4904bdf49074870e0d47/Untitled%203.png)
+![Untitled](/assets/2023-11-14-SwiftUI Archtiecture/Untitled 3.png)
 
 1. 먼저 Subscriber 객체가 Publisher에 구독을 시작한다. (Subscriber의 `receive<S>(subscriber: S)` 메서드 실행)
 2. Publisher가 Subscription 객체를 생성한다.
