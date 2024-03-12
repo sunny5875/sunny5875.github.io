@@ -82,7 +82,7 @@ for exported_foldername in ${exported_foldername_array[*]}; do
     sed -i '' "1s|.*|---|" "$exported_file_path"
     sed -i "" -e $'1 a\\\n'"layout: post" "$exported_file_path"
     sed -i "" -e $'2 a\\\n'"title: $meta_title" "$exported_file_path" #title은 Notion 제목값으로 자동 입력
-    sed -i "" -e $'3 a\\\n'"date: $meta_date" "$exported_file_path"
+    sed -i "" -e $'3 a\\\n'"date: 2023-06-14 23:25:33 +0000" "$exported_file_path"
     sed -i "" -e $'4 a\\\n'"category: $meta_categories" "$exported_file_path"
     sed -i "" -e $'5 a\\\n'"---" "$exported_file_path"
 
