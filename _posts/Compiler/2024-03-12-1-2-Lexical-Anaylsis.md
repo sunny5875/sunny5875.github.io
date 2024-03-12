@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 1-2.Lexical Anaylsis
-date: 2024-03-12 23:34:16 +0000
+date: '2022-04-29 23:25:33 +0000'
 category: Compiler
 ---
 
