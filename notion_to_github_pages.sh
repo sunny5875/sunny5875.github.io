@@ -70,12 +70,8 @@ for exported_foldername in ${exported_foldername_array[*]}; do
 
 
     # Jekyll에서 사용되는 meta 정보 추가하기
-    echo -n "Enter a subtitle: "
-    read  meta_subtitle
     echo -n "Enter categories: "
     read  meta_categories
-    echo -n "Enter tags: "
-    read  meta_tags
 
     meta_date="$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S) +0000"
     meta_last_modified_at="$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S) +0000"
@@ -85,12 +81,10 @@ for exported_foldername in ${exported_foldername_array[*]}; do
     # https://stackoverflow.com/questions/16745988/sed-command-with-i-option-in-place-editing-works-fine-on-ubuntu-but-not-mac
     sed -i '' "1s|.*|---|" "$exported_file_path"
     sed -i "" -e $'1 a\\\n'"title: $meta_title" "$exported_file_path" #title은 Notion 제목값으로 자동 입력
-    sed -i "" -e $'2 a\\\n'"subtitle: $meta_subtitle" "$exported_file_path" # https://unix.stackexchange.com/questions/52131/sed-on-osx-insert-at-a-certain-line
-    sed -i "" -e $'3 a\\\n'"categories: $meta_categories" "$exported_file_path"
-    sed -i "" -e $'4 a\\\n'"tags: $meta_tags" "$exported_file_path"
-    sed -i "" -e $'5 a\\\n'"date: $meta_date" "$exported_file_path"
-    sed -i "" -e $'6 a\\\n'"last_modified_at: $meta_last_modified_at" "$exported_file_path"
-    sed -i "" -e $'7 a\\\n'"---" "$exported_file_path"
+    sed -i "" -e $'2 a\\\n'"categories: $meta_categories" "$exported_file_path"
+    sed -i "" -e $'3 a\\\n'"date: $meta_date" "$exported_file_path"
+    sed -i "" -e $'4 a\\\n'"last_modified_at: $meta_last_modified_at" "$exported_file_path"
+    sed -i "" -e $'5 a\\\n'"---" "$exported_file_path"
 
 
     # Making a post file name
