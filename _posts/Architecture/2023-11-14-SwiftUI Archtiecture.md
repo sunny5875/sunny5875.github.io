@@ -267,7 +267,3 @@ class TestSubscription: Subscription {
 6. Subscription이 Subscriber에게 values를 전달한다. (Subscriber의 `receive(_ input: )` 메서드 실행)
 7. Subscription이 Subscriber에게 completion을 전달한다. (Subscriber의 `receive(completion: )` 메서드 실행)
 
-<aside>
-💡 결론!! 일단은 uikit쓰자…. swiftUI는 너무 시기상조이다… 대신 storyboard code base로 해보자!!
-
-</aside>
