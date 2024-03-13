@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Demystify SwiftUI
-date: 2024-03-12 23:25:33 +0000
+date: 2024-03-13 23:25:33 +0000
 category: Swift
 ---
 
