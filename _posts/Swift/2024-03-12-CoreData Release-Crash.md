@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CoreData Release Crash
-date: '2024-03-12 23:25:33 +0000'
+date: '2024-03-11 23:25:33 +0000'
 category: Swift
 ---
 # CoreData Release Crash
