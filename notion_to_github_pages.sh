@@ -73,16 +73,16 @@ for exported_foldername in ${exported_foldername_array[*]}; do
     echo -n "Enter categories: "
     read  meta_categories
 
-    meta_date="$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S) +0000"
-    meta_last_modified_at="$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S) +0000"
+    meta_date="$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S) +0900"
+    meta_last_modified_at="$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S) +0900"
 
     # 한 줄씩 추가하기(한 번에 하려고 했더니 /n 줄바꿈이 문자열 그대로 md에 입력되어 한줄씩 추가로 수정)
     # OS X ships with BSD sed, where the suffix for the -i option(changes made to the file) is mandatory. Try sed -i ''
     # https://stackoverflow.com/questions/16745988/sed-command-with-i-option-in-place-editing-works-fine-on-ubuntu-but-not-mac
     sed -i '' "1s|.*|---|" "$exported_file_path"
     sed -i "" -e $'1 a\\\n'"layout: post" "$exported_file_path"
-    sed -i "" -e $'2 a\\\n'"title: $meta_title" "$exported_file_path" #title은 Notion 제목값으로 자동 입력
-    sed -i "" -e $'3 a\\\n'"date: 2024-03-12 23:25:33 +0000" "$exported_file_path"
+    sed -i "" -e $'2 a\\\n'"title: $meta_date" "$exported_file_path" #title은 Notion 제목값으로 자동 입력
+    sed -i "" -e $'3 a\\\n'"date: $meta_date" "$exported_file_path"
     sed -i "" -e $'4 a\\\n'"category: $meta_categories" "$exported_file_path"
     sed -i "" -e $'5 a\\\n'"---" "$exported_file_path"
 
