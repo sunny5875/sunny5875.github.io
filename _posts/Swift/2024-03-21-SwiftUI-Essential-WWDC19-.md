@@ -1,5 +1,5 @@
 ---
-layout: pos
+layout: post
 title: SwiftUI-Essential-WWDC19-
 date: 2024-03-21 09:54:50 +0900
 category: Swift
