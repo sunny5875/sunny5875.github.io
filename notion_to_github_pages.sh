@@ -100,11 +100,11 @@ for exported_foldername in ${exported_foldername_array[*]}; do
     mkdir -p $posts_folder_path
     mkdir -p $images_folder_path
 
-    mv -i -v "$exported_file_path" "$posts_folder_path/$fixed_filename.md"
+    mv -i -v "$exported_file_path" "$posts_folder_path/$meta_categories/$fixed_filename.md"
     mv -i -v "$exported_foldername/$exported_filename" "$images_folder_path/$fixed_filename"
 
     # git add
-    git add "$posts_folder_path/$fixed_filename.md"
+    git add "$posts_folder_path/$meta_categories/$fixed_filename.md"
     git add "$images_folder_path/$fixed_filename"
     git commit -m "$fixed_filename is uploaded"
 
