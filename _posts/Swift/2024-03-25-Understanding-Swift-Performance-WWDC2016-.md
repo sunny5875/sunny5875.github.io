@@ -174,16 +174,19 @@ func draw2(local: Drawable) {
 - Generic 코드는 parametric polym
 
 # 결론
-
 - **struct vs class**
     - struct
         - 내부의 참조타입에 대한 오버헤드를 줄이는 방식으로 가야 하고
         - thread safe하고 메모리 leak 없어서 대부분의 경우 안전
     - class
         - 동적 디스패치에 대한 오버헤드를 final을 통해 줄이는 방식으로 가야함
-        - 인스턴스 복사시 같은 객체를 가리키고 싶을 때
+        - 인스턴스 복사시 같은 객체를 가리키고 싶을 때 사용
         - 크기가 큰 인스턴스
-
+- least dynamic runtime type requirement(런타임에 타입이 최소한으로 결정되는 요구사항)인 abstraction을 선택해야 함
+    - struct: value semantics
+    - class: identity or OOP style polymorphism
+    - generics: static polymorphism, struct이 더 빠른 편
+    - protocol: dynamic polymorphism, struct이 더 빠른 편
 ### 참고
 
 [Understanding Swift Performance - WWDC16 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2016/416/)
