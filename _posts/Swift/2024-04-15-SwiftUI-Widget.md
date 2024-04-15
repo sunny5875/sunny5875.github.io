@@ -34,7 +34,7 @@ category: Swift
 
 → 즉, view는 이미 준비가 되어있고 그시간마다 이미 만들어진 뷰를 표출하는 것
 
-![Untitled](/assets/2024-04-15-SwiftUI-Widget/Untitled.png)
+<img src="/assets/2024-04-15-SwiftUI-Widget/Untitled.png" width="40%" height="40%" />
 
 ### WidgetBundle
 
@@ -103,7 +103,7 @@ struct MyWidget: Widget {
 }
 ```
 
-![IMG_AA12A28DF3A6-1.jpeg](/assets/2024-04-15-SwiftUI-Widget/IMG_AA12A28DF3A6-1.jpeg)
+<img src="/assets/2024-04-15-SwiftUI-Widget/IMG_AA12A28DF3A6-1.jpeg" width="20%" height="20%" />
 
 **WidgetConfigurationIntent**
 
@@ -121,7 +121,7 @@ struct ConfigurationAppIntent: WidgetConfigurationIntent {
 }
 ```
 
-![IMG_8748.PNG](/assets/2024-04-15-SwiftUI-Widget/IMG_8748.png)
+<img src="/assets/2024-04-15-SwiftUI-Widget/IMG_8748.png" width="20%" height="20%" />
 
 **Provider**
 
