@@ -5,9 +5,9 @@
 
 ### 2️⃣ 실행 권한 부여
 - 스크립트를 처음 사용할 때는 실행 권한을 부여합니다.
-
+```
 chmod +x notion_to_github_pages.sh
-
+```
 ### 3️⃣ Notion ZIP 파일 준비
 - Notion에서 Markdown + CSV 형식으로 Export
 
@@ -18,15 +18,22 @@ chmod +x notion_to_github_pages.sh
 스크립트에서 exported_zip_reg="*.zip"로 지정되어 있으므로, .zip 파일이면 자동 감지됩니다.
 
 ### 4️⃣ 스크립트 실행
+```
 ./notion_to_github_pages.sh
-
+```
 
 #### 실행 과정:
 ZIP 파일 자동 압축 해제 -> Markdown 파일 메타데이터 생성 -> 이미지 경로 수정 -> _posts와 assets 폴더로 이동 -> Git add + commit -> ZIP 및 임시 폴더 삭제 -> 실행 중에 title, category 입력을 요구할 수 있습니다.
 
-### 5️⃣ GitHub에 Push
+### 5️⃣ GitHub에 commit 후 Push
 
-##⚠️ 주의 사항
+```
+git commit -m "메세지"
+git push origin
+```
+
+---
+## ⚠️ 주의 사항
 
 - 파일/폴더 이름에 공백이나 특수문자가 있으면 %20 처리됨
 - macOS BSD sed 전용(sed -i '') → Linux 환경에서는 sed -i로 변경 필요
