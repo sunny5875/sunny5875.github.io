@@ -64,12 +64,16 @@ protocol Servicable {
   func testfunction4()
 }
 
-class Service: Servicable {
+struct Service: Servicable {
+  static let shared = Service()
+  private init() {}
+  
   func testfunction() {}
   func testfunction2() {}
   func testfunction3() {}
   func testfunction4() {}
 }
+
 
 protocol Accessable: Servicable {
   var a: Servicable { get set }
@@ -93,7 +97,9 @@ extension Accessable {
   }
 }
 
-protocol Repositable: Servicable, Accessable {}
+
+
+protocol Repositable: Accessable {}
 
 class Repository: Repositable {
   var a: Servicable
